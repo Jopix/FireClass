@@ -1,0 +1,15 @@
+﻿生成启动时间为 2014/4/7 19:09:26。
+     1>项目“G:\FinalDesign\FireClass\fireClass.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         F:\Program Files (x86)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt FCmain\platform\android\FCSocket_andr.cpp FCmain\platform\android\jni\JniHelper.cpp project\proj.win\main.cpp
+         main.cpp
+     1>g:\developer\android-ndk-r9d\platforms\android-14\arch-x86\usr\include\sys\cdefs.h(253): fatal error C1004: 发现意外的文件尾
+         JniHelper.cpp
+         正在生成代码...
+         正在跳过...(未检测到相关更改)
+         FCSocket_andr.cpp
+     1>已完成生成项目“G:\FinalDesign\FireClass\fireClass.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.21
