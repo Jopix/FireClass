@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE359800191908EF008FFD62 /* FCUserSystemManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE3597FE191908EF008FFD62 /* FCUserSystemManager.cpp */; };
+		CE35980B19190BAE008FFD62 /* FCToC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE35980419190BAE008FFD62 /* FCToC.cpp */; };
+		CE35980C19190BAE008FFD62 /* FCSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE35980719190BAE008FFD62 /* FCSocket.cpp */; };
+		CE35980D19190BAE008FFD62 /* FCSocketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE35980919190BAE008FFD62 /* FCSocketManager.cpp */; };
 		CE83603618F3C178009331CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE83603518F3C178009331CB /* Foundation.framework */; };
 		CE83603818F3C178009331CB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE83603718F3C178009331CB /* CoreGraphics.framework */; };
 		CE83603A18F3C178009331CB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE83603918F3C178009331CB /* UIKit.framework */; };
@@ -14,12 +18,20 @@
 		CE83604218F3C178009331CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE83604118F3C178009331CB /* main.m */; };
 		CE83604618F3C178009331CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE83604518F3C178009331CB /* AppDelegate.m */; };
 		CE83604818F3C178009331CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE83604718F3C178009331CB /* Images.xcassets */; };
-		CE83608018F408FE009331CB /* FCSocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE83607818F408FE009331CB /* FCSocket.cpp */; };
-		CE83608118F408FE009331CB /* FCSocketManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CE83607A18F408FE009331CB /* FCSocketManager.cpp */; };
 		CE83608818F40A6F009331CB /* FCLog.mm in Sources */ = {isa = PBXBuildFile; fileRef = CE83608718F40A6F009331CB /* FCLog.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE3597FE191908EF008FFD62 /* FCUserSystemManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FCUserSystemManager.cpp; sourceTree = "<group>"; };
+		CE3597FF191908EF008FFD62 /* FCUserSystemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCUserSystemManager.h; sourceTree = "<group>"; };
+		CE35980219190BAE008FFD62 /* FCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCConfig.h; sourceTree = "<group>"; };
+		CE35980319190BAE008FFD62 /* FCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLog.h; sourceTree = "<group>"; };
+		CE35980419190BAE008FFD62 /* FCToC.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FCToC.cpp; sourceTree = "<group>"; };
+		CE35980519190BAE008FFD62 /* FCToC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCToC.h; sourceTree = "<group>"; };
+		CE35980719190BAE008FFD62 /* FCSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FCSocket.cpp; sourceTree = "<group>"; };
+		CE35980819190BAE008FFD62 /* FCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSocket.h; sourceTree = "<group>"; };
+		CE35980919190BAE008FFD62 /* FCSocketManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FCSocketManager.cpp; sourceTree = "<group>"; };
+		CE35980A19190BAE008FFD62 /* FCSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSocketManager.h; sourceTree = "<group>"; };
 		CE83603218F3C178009331CB /* FireClass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireClass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE83603518F3C178009331CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		CE83603718F3C178009331CB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -32,12 +44,6 @@
 		CE83604518F3C178009331CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE83604718F3C178009331CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CE83604E18F3C178009331CB /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		CE83607618F408FE009331CB /* FCConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCConfig.h; sourceTree = "<group>"; };
-		CE83607718F408FE009331CB /* FCLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLog.h; sourceTree = "<group>"; };
-		CE83607818F408FE009331CB /* FCSocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FCSocket.cpp; sourceTree = "<group>"; };
-		CE83607918F408FE009331CB /* FCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSocket.h; sourceTree = "<group>"; };
-		CE83607A18F408FE009331CB /* FCSocketManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FCSocketManager.cpp; sourceTree = "<group>"; };
-		CE83607B18F408FE009331CB /* FCSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSocketManager.h; sourceTree = "<group>"; };
 		CE83608718F40A6F009331CB /* FCLog.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCLog.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +61,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE3597FA19190811008FFD62 /* usersystem */ = {
+			isa = PBXGroup;
+			children = (
+				CE3597FE191908EF008FFD62 /* FCUserSystemManager.cpp */,
+				CE3597FF191908EF008FFD62 /* FCUserSystemManager.h */,
+			);
+			path = usersystem;
+			sourceTree = "<group>";
+		};
+		CE35980119190BAE008FFD62 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				CE35980219190BAE008FFD62 /* FCConfig.h */,
+				CE35980319190BAE008FFD62 /* FCLog.h */,
+				CE35980419190BAE008FFD62 /* FCToC.cpp */,
+				CE35980519190BAE008FFD62 /* FCToC.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		CE35980619190BAE008FFD62 /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				CE35980719190BAE008FFD62 /* FCSocket.cpp */,
+				CE35980819190BAE008FFD62 /* FCSocket.h */,
+				CE35980919190BAE008FFD62 /* FCSocketManager.cpp */,
+				CE35980A19190BAE008FFD62 /* FCSocketManager.h */,
+			);
+			path = socket;
+			sourceTree = "<group>";
+		};
 		CE83602918F3C178009331CB = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +147,9 @@
 		CE83606E18F408FE009331CB /* FCmain */ = {
 			isa = PBXGroup;
 			children = (
+				CE3597FA19190811008FFD62 /* usersystem */,
+				CE35980119190BAE008FFD62 /* base */,
+				CE35980619190BAE008FFD62 /* socket */,
 				CE83606F18F408FE009331CB /* platform */,
 			);
 			name = FCmain;
@@ -120,12 +160,6 @@
 			isa = PBXGroup;
 			children = (
 				CE83608618F40A6F009331CB /* iOS */,
-				CE83607618F408FE009331CB /* FCConfig.h */,
-				CE83607718F408FE009331CB /* FCLog.h */,
-				CE83607818F408FE009331CB /* FCSocket.cpp */,
-				CE83607918F408FE009331CB /* FCSocket.h */,
-				CE83607A18F408FE009331CB /* FCSocketManager.cpp */,
-				CE83607B18F408FE009331CB /* FCSocketManager.h */,
 			);
 			path = platform;
 			sourceTree = "<group>";
@@ -201,10 +235,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE35980D19190BAE008FFD62 /* FCSocketManager.cpp in Sources */,
 				CE83604618F3C178009331CB /* AppDelegate.m in Sources */,
 				CE83604218F3C178009331CB /* main.m in Sources */,
-				CE83608118F408FE009331CB /* FCSocketManager.cpp in Sources */,
-				CE83608018F408FE009331CB /* FCSocket.cpp in Sources */,
+				CE359800191908EF008FFD62 /* FCUserSystemManager.cpp in Sources */,
+				CE35980C19190BAE008FFD62 /* FCSocket.cpp in Sources */,
+				CE35980B19190BAE008FFD62 /* FCToC.cpp in Sources */,
 				CE83608818F40A6F009331CB /* FCLog.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,9 +336,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FireClass/FireClass-Prefix.pch";
-				INFOPLIST_FILE = "FireClass/FireClass-Info.plist";
+				INFOPLIST_FILE = "FireClass-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -313,9 +352,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FireClass/FireClass-Prefix.pch";
-				INFOPLIST_FILE = "FireClass/FireClass-Info.plist";
+				INFOPLIST_FILE = "FireClass-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
