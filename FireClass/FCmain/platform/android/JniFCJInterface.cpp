@@ -1,7 +1,7 @@
 #include <android/log.h>
 #include <string.h>
 #include "jni/JniHelper.h"
-#include "../../base/FCToC.h"
+#include "../FCToC.h"
 
 #ifdef __cplusplus
 extern "C" {
@@ -15,7 +15,7 @@ extern "C" {
   {
   	const char* username = env->GetStringUTFChars(j_username, NULL);
     const char* password = env->GetStringUTFChars(j_password, NULL);
-    int ret = checkUserNameAndPassWord(username, password);
+    int ret = FCToC::checkUserNameAndPassWord(username, password);
 		env->ReleaseStringUTFChars(j_username, username);
     env->ReleaseStringUTFChars(j_password, password);
     return ret;
@@ -26,15 +26,13 @@ extern "C" {
  * Method:    getData
  * Signature: (Landroid/R/string;)Landroid/R/string;
  */
-jstring Java_com_example_Interface_FCJInterface_getData(JNIEnv * env, jclass zthis, jstring j_type)
-{
-    const char * type = env->GetStringUTFChars(j_type, NULL);
-    const char * ret = getUserData(type);
-    
-
-}
+// jstring Java_com_example_Interface_FCJInterface_getData(JNIEnv * env, jclass zthis, jstring j_type)
+// {
+//     const char * type = env->GetStringUTFChars(j_type, NULL);
+//     const char * tmpret = FCToC::getUserData(type);    
+//     return JniHelper::stoJstring(tmpret);
+// }
 
 #ifdef __cplusplus
 }
-#endif
 #endif

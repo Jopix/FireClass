@@ -1,11 +1,17 @@
-obj/local/armeabi-v7a/objs/fireclass/__/__/__/FCmain/platform/FCSocketManager.o: \
- jni/../../../FCmain/platform/FCSocketManager.cpp \
- jni/../../../FCmain/platform/FCSocketManager.h \
- jni/../../../FCmain/platform/FCSocket.h \
- jni/../../../FCmain/platform/FCConfig.h
+/Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/obj/local/armeabi-v7a/objs/fireclass/__/__/__/FCmain/platform/FCSocketManager.o: \
+ /Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/FCSocketManager.cpp \
+ /Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/FCSocketManager.h \
+ /Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/FCSocket.h \
+ /Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/FCConfig.h \
+ /Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/android/FCSocket_andr.h \
+ /Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/android/../FCSocket.h
 
-jni/../../../FCmain/platform/FCSocketManager.h:
+/Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/FCSocketManager.h:
 
-jni/../../../FCmain/platform/FCSocket.h:
+/Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/FCSocket.h:
 
-jni/../../../FCmain/platform/FCConfig.h:
+/Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/FCConfig.h:
+
+/Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/android/FCSocket_andr.h:
+
+/Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/android/../FCSocket.h:

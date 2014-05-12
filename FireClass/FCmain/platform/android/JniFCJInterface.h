@@ -20,8 +20,8 @@ JNIEXPORT jint JNICALL Java_com_example_Interface_FCJInterface_checkUserNameAndP
  * Method:    getData
  * Signature: (Ljava/lang/String;)Ljava/lang/String;
  */
-JNIEXPORT jstring JNICALL Java_com_example_Interface_FCJInterface_getData
-  (JNIEnv *, jclass, jstring);
+// JNIEXPORT jstring JNICALL Java_com_example_Interface_FCJInterface_getData
+//   (JNIEnv *, jclass, jstring);
 
 #ifdef __cplusplus
 }

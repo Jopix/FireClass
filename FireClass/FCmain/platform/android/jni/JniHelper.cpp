@@ -154,6 +154,7 @@ extern "C"
 
         return ret;
     }
+
 }
 
 JavaVM* JniHelper::m_psJavaVM = NULL;
