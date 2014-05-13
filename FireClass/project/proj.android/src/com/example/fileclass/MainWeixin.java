@@ -1,5 +1,4 @@
-package com.example.fileclass;
-
+ï»¿package com.example.fileclass;
 
 import java.util.ArrayList;
 
@@ -21,18 +20,17 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.PopupWindow;
-import android.widget.Toast;
 
 public class MainWeixin extends Activity {
 	
 	public static MainWeixin instance = null;
 	 
 	private ViewPager mTabPager;	
-	private ImageView mTabImg;// ¶¯»­Í¼Æ¬
+	private ImageView mTabImg;// åŠ¨ç”»å›¾ç‰‡
 	private ImageView mTab1,mTab2,mTab3,mTab4;
-	private int zero = 0;// ¶¯»­Í¼Æ¬Æ«ÒÆÁ¿
-	private int currIndex = 0;// µ±Ç°Ò³¿¨±àºÅ
-	private int one;//µ¥¸öË®Æ½¶¯»­Î»ÒÆ
+	private int zero = 0;// åŠ¨ç”»å›¾ç‰‡åç§»é‡
+	private int currIndex = 0;// å½“å‰é¡µå¡ç¼–å·
+	private int one;//å•ä¸ªæ°´å¹³åŠ¨ç”»ä½ç§»
 	private int two;
 	private int three;
 	private LinearLayout mClose;
@@ -47,7 +45,7 @@ public class MainWeixin extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_weixin);
-         //Æô¶¯activityÊ±²»×Ô¶¯µ¯³öÈí¼üÅÌ
+         //å¯åŠ¨activityæ—¶ä¸è‡ªåŠ¨å¼¹å‡ºè½¯é”®ç›˜
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_ALWAYS_HIDDEN); 
         instance = this;
         /*
@@ -71,29 +69,29 @@ public class MainWeixin extends Activity {
         mTab2.setOnClickListener(new MyOnClickListener(1));
         mTab3.setOnClickListener(new MyOnClickListener(2));
         mTab4.setOnClickListener(new MyOnClickListener(3));
-        Display currDisplay = getWindowManager().getDefaultDisplay();//»ñÈ¡ÆÁÄ»µ±Ç°·Ö±æÂÊ
+        Display currDisplay = getWindowManager().getDefaultDisplay();//è·å–å±å¹•å½“å‰åˆ†è¾¨ç‡
         int displayWidth = currDisplay.getWidth();
         int displayHeight = currDisplay.getHeight();
-        one = displayWidth/4; //ÉèÖÃË®Æ½¶¯»­Æ½ÒÆ´óĞ¡
+        one = displayWidth/4; //è®¾ç½®æ°´å¹³åŠ¨ç”»å¹³ç§»å¤§å°
         two = one*2;
         three = one*3;
-        //Log.i("info", "»ñÈ¡µÄÆÁÄ»·Ö±æÂÊÎª" + one + two + three + "X" + displayHeight);
+        //Log.i("info", "è·å–çš„å±å¹•åˆ†è¾¨ç‡ä¸º" + one + two + three + "X" + displayHeight);
         
-        //InitImageView();//Ê¹ÓÃ¶¯»­
-      //½«Òª·ÖÒ³ÏÔÊ¾µÄView×°ÈëÊı×éÖĞ
+        //InitImageView();//ä½¿ç”¨åŠ¨ç”»
+      //å°†è¦åˆ†é¡µæ˜¾ç¤ºçš„Viewè£…å…¥æ•°ç»„ä¸­
         LayoutInflater mLi = LayoutInflater.from(this);
         View view1 = mLi.inflate(R.layout.main_tab_weixin, null);
         View view2 = mLi.inflate(R.layout.main_tab_address, null);
         View view3 = mLi.inflate(R.layout.main_tab_friends, null);
         View view4 = mLi.inflate(R.layout.main_tab_settings, null);
         
-      //Ã¿¸öÒ³ÃæµÄviewÊı¾İ
+      //æ¯ä¸ªé¡µé¢çš„viewæ•°æ®
         final ArrayList<View> views = new ArrayList<View>();
         views.add(view1);
         views.add(view2);
         views.add(view3);
         views.add(view4);
-      //Ìî³äViewPagerµÄÊı¾İÊÊÅäÆ÷
+      //å¡«å……ViewPagerçš„æ•°æ®é€‚é…å™¨
         PagerAdapter mPagerAdapter = new PagerAdapter() {
 			
 			@Override
@@ -126,7 +124,7 @@ public class MainWeixin extends Activity {
 		mTabPager.setAdapter(mPagerAdapter);
     }
     /**
-	 * Í·±êµã»÷¼àÌı
+	 * å¤´æ ‡ç‚¹å‡»ç›‘å¬
 	 */
 	public class MyOnClickListener implements View.OnClickListener {
 		private int index = 0;
@@ -140,7 +138,7 @@ public class MainWeixin extends Activity {
 		}
 	};
     
-	 /* Ò³¿¨ÇĞ»»¼àÌı(Ô­×÷Õß:D.Winter)
+	 /* é¡µå¡åˆ‡æ¢ç›‘å¬(åŸä½œè€…:D.Winter)
 	 */
 	public class MyOnPageChangeListener implements OnPageChangeListener {
 		@Override
@@ -205,7 +203,7 @@ public class MainWeixin extends Activity {
 				break;
 			}
 			currIndex = arg0;
-			animation.setFillAfter(true);// True:Í¼Æ¬Í£ÔÚ¶¯»­½áÊøÎ»ÖÃ
+			animation.setFillAfter(true);// True:å›¾ç‰‡åœåœ¨åŠ¨ç”»ç»“æŸä½ç½®
 			animation.setDuration(150);
 			mTabImg.startAnimation(animation);
 		}
@@ -221,9 +219,9 @@ public class MainWeixin extends Activity {
 	
 	@Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-    	if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {  //»ñÈ¡ back¼ü
+    	if (keyCode == KeyEvent.KEYCODE_BACK && event.getRepeatCount() == 0) {  //è·å– backé”®
     		
-        	if(menu_display){         //Èç¹û MenuÒÑ¾­´ò¿ª £¬ÏÈ¹Ø±ÕMenu
+        	if(menu_display){         //å¦‚æœ Menuå·²ç»æ‰“å¼€ ï¼Œå…ˆå…³é—­Menu
         		menuWindow.dismiss();
         		menu_display = false;
         		}
@@ -234,40 +232,40 @@ public class MainWeixin extends Activity {
         	}
     	}
     	
-    	else if(keyCode == KeyEvent.KEYCODE_MENU){   //»ñÈ¡ Menu¼ü			
+    	else if(keyCode == KeyEvent.KEYCODE_MENU){   //è·å– Menué”®			
 			if(!menu_display){
-				//»ñÈ¡LayoutInflaterÊµÀı
+				//è·å–LayoutInflaterå®ä¾‹
 				inflater = (LayoutInflater)this.getSystemService(LAYOUT_INFLATER_SERVICE);
-				//ÕâÀïµÄmain²¼¾ÖÊÇÔÚinflateÖĞ¼ÓÈëµÄÅ¶£¬ÒÔÇ°¶¼ÊÇÖ±½Óthis.setContentView()µÄ°É£¿ºÇºÇ
-				//¸Ã·½·¨·µ»ØµÄÊÇÒ»¸öViewµÄ¶ÔÏó£¬ÊÇ²¼¾ÖÖĞµÄ¸ù
+				//è¿™é‡Œçš„mainå¸ƒå±€æ˜¯åœ¨inflateä¸­åŠ å…¥çš„å“¦ï¼Œä»¥å‰éƒ½æ˜¯ç›´æ¥this.setContentView()çš„å§ï¼Ÿå‘µå‘µ
+				//è¯¥æ–¹æ³•è¿”å›çš„æ˜¯ä¸€ä¸ªViewçš„å¯¹è±¡ï¼Œæ˜¯å¸ƒå±€ä¸­çš„æ ¹
 				layout = inflater.inflate(R.layout.main_menu, null);
 				
-				//ÏÂÃæÎÒÃÇÒª¿¼ÂÇÁË£¬ÎÒÔõÑù½«ÎÒµÄlayout¼ÓÈëµ½PopupWindowÖĞÄØ£¿£¿£¿ºÜ¼òµ¥
-				menuWindow = new PopupWindow(layout,LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT); //ºóÁ½¸ö²ÎÊıÊÇwidthºÍheight
-				//menuWindow.showAsDropDown(layout); //ÉèÖÃµ¯³öĞ§¹û
+				//ä¸‹é¢æˆ‘ä»¬è¦è€ƒè™‘äº†ï¼Œæˆ‘æ€æ ·å°†æˆ‘çš„layoutåŠ å…¥åˆ°PopupWindowä¸­å‘¢ï¼Ÿï¼Ÿï¼Ÿå¾ˆç®€å•
+				menuWindow = new PopupWindow(layout,LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT); //åä¸¤ä¸ªå‚æ•°æ˜¯widthå’Œheight
+				//menuWindow.showAsDropDown(layout); //è®¾ç½®å¼¹å‡ºæ•ˆæœ
 				//menuWindow.showAsDropDown(null, 0, layout.getHeight());
-				menuWindow.showAtLocation(this.findViewById(R.id.mainweixin), Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0); //ÉèÖÃlayoutÔÚPopupWindowÖĞÏÔÊ¾µÄÎ»ÖÃ
-				//ÈçºÎ»ñÈ¡ÎÒÃÇmainÖĞµÄ¿Ø¼şÄØ£¿Ò²ºÜ¼òµ¥
+				menuWindow.showAtLocation(this.findViewById(R.id.mainweixin), Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0); //è®¾ç½®layoutåœ¨PopupWindowä¸­æ˜¾ç¤ºçš„ä½ç½®
+				//å¦‚ä½•è·å–æˆ‘ä»¬mainä¸­çš„æ§ä»¶å‘¢ï¼Ÿä¹Ÿå¾ˆç®€å•
 				mClose = (LinearLayout)layout.findViewById(R.id.menu_close);
 				mCloseBtn = (LinearLayout)layout.findViewById(R.id.menu_close_btn);
 				
 				
-				//ÏÂÃæ¶ÔÃ¿Ò»¸öLayout½øĞĞµ¥»÷ÊÂ¼şµÄ×¢²á°É¡£¡£¡£
-				//±ÈÈçµ¥»÷Ä³¸öMenuItemµÄÊ±ºò£¬ËûµÄ±³¾°É«¸Ä±ä
-				//ÊÂÏÈ×¼±¸ºÃÒ»Ğ©±³¾°Í¼Æ¬»òÕßÑÕÉ«
+				//ä¸‹é¢å¯¹æ¯ä¸€ä¸ªLayoutè¿›è¡Œå•å‡»äº‹ä»¶çš„æ³¨å†Œå§ã€‚ã€‚ã€‚
+				//æ¯”å¦‚å•å‡»æŸä¸ªMenuItemçš„æ—¶å€™ï¼Œä»–çš„èƒŒæ™¯è‰²æ”¹å˜
+				//äº‹å…ˆå‡†å¤‡å¥½ä¸€äº›èƒŒæ™¯å›¾ç‰‡æˆ–è€…é¢œè‰²
 				mCloseBtn.setOnClickListener (new View.OnClickListener() {					
 					@Override
 					public void onClick(View arg0) {						
-						//Toast.makeText(Main.this, "ÍË³ö", Toast.LENGTH_LONG).show();
+						//Toast.makeText(Main.this, "é€€å‡º", Toast.LENGTH_LONG).show();
 						Intent intent = new Intent();
 			        	intent.setClass(MainWeixin.this,Exit.class);
 			        	startActivity(intent);
-			        	menuWindow.dismiss(); //ÏìÓ¦µã»÷ÊÂ¼şÖ®ºó¹Ø±ÕMenu
+			        	menuWindow.dismiss(); //å“åº”ç‚¹å‡»äº‹ä»¶ä¹‹åå…³é—­Menu
 					}
 				});				
 				menu_display = true;				
 			}else{
-				//Èç¹ûµ±Ç°ÒÑ¾­ÎªÏÔÊ¾×´Ì¬£¬ÔòÒş²ØÆğÀ´
+				//å¦‚æœå½“å‰å·²ç»ä¸ºæ˜¾ç¤ºçŠ¶æ€ï¼Œåˆ™éšè—èµ·æ¥
 				menuWindow.dismiss();
 				menu_display = false;
 				}
@@ -276,22 +274,22 @@ public class MainWeixin extends Activity {
 		}
     	return false;
     }
-	//ÉèÖÃ±êÌâÀ¸ÓÒ²à°´Å¥µÄ×÷ÓÃ
+	//è®¾ç½®æ ‡é¢˜æ å³ä¾§æŒ‰é’®çš„ä½œç”¨
 	public void btnmainright(View v) {  
 		Intent intent = new Intent (MainWeixin.this,MainTopRightDialog.class);			
 		startActivity(intent);	
-		//Toast.makeText(getApplicationContext(), "µã»÷ÁË¹¦ÄÜ°´Å¥", Toast.LENGTH_LONG).show();
+		//Toast.makeText(getApplicationContext(), "ç‚¹å‡»äº†åŠŸèƒ½æŒ‰é’®", Toast.LENGTH_LONG).show();
       }  	
-	public void startchat(View v) {      //Ğ¡ºÚ  ¶Ô»°½çÃæ
+	public void startchat(View v) {      //å°é»‘  å¯¹è¯ç•Œé¢
 		Intent intent = new Intent (MainWeixin.this,ChatActivity.class);			
 		startActivity(intent);	
-		//Toast.makeText(getApplicationContext(), "µÇÂ¼³É¹¦", Toast.LENGTH_LONG).show();
+		//Toast.makeText(getApplicationContext(), "ç™»å½•æˆåŠŸ", Toast.LENGTH_LONG).show();
       }  
-	public void exit_settings(View v) {                           //ÍË³ö  Î±¡°¶Ô»°¿ò¡±£¬ÆäÊµÊÇÒ»¸öactivity
+	public void exit_settings(View v) {                           //é€€å‡º  ä¼ªâ€œå¯¹è¯æ¡†â€ï¼Œå…¶å®æ˜¯ä¸€ä¸ªactivity
 		Intent intent = new Intent (MainWeixin.this,ExitFromSettings.class);			
 		startActivity(intent);	
 	 }
-	public void btn_shake(View v) {                                   //ÊÖ»úÒ¡Ò»Ò¡
+	public void btn_shake(View v) {                                   //æ‰‹æœºæ‘‡ä¸€æ‘‡
 		Intent intent = new Intent (MainWeixin.this,ShakeActivity.class);			
 		startActivity(intent);	
 	}

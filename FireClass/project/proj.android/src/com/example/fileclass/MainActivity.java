@@ -2,10 +2,12 @@ package com.example.fileclass;
 
 import java.util.Map;
 
+import com.example.lib.FCJClientSocketManager;
+import com.example.lib.FCJNetworkManager;
+import com.example.lib.FCJServerSocketManager;
+import com.example.lib.FCJWifiHotPot;
 import com.example.notification.FCJNotificationCenter;
 import com.example.notification.FCJNotificationListener;
-import com.example.tools.FCJNetworkManager;
-import com.example.tools.FCJWifiHotPot;
 
 import android.app.Activity;
 import android.app.Fragment;

@@ -1,5 +1,4 @@
-package com.example.fileclass;
-
+﻿package com.example.fileclass;
 
 import android.os.Bundle;
 import android.app.Activity;
@@ -18,13 +17,10 @@ public class Welcome extends Activity {
       	Intent intent = new Intent();
 		intent.setClass(Welcome.this,Login.class);
 		startActivity(intent);
-		//this.finish();
       }  
     public void welcome_register(View v) {  
       	Intent intent = new Intent();
 		intent.setClass(Welcome.this,MainWeixin.class);
 		startActivity(intent);
-		//this.finish();
       }  
-   
 }

@@ -1,5 +1,4 @@
-
-package com.example.fileclass;
+﻿package com.example.fileclass;
 
 public class ChatMsgEntity {
     private static final String TAG = ChatMsgEntity.class.getSimpleName();

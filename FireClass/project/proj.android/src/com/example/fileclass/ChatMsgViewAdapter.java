@@ -1,5 +1,5 @@
+﻿package com.example.fileclass;
 
-package com.example.fileclass;
 import android.R.integer;
 import android.content.Context;
 import android.database.DataSetObserver;

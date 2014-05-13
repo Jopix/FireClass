@@ -1,6 +1,4 @@
-package com.example.fileclass;
-
-
+﻿package com.example.fileclass;
 
 import android.os.Bundle;
 import android.os.Handler;

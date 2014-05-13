@@ -1,6 +1,6 @@
-/Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/obj/local/armeabi/objs/fireclass/__/__/__/FCmain/platform/android/FCLog.o: \
- /Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/android/FCLog.cpp \
- /Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/android/../FCLog.h \
+obj/local/armeabi/objs/fireclass/__/__/__/FCmain/platform/android/FCLog.o: \
+ jni/../../../FCmain/platform/android/FCLog.cpp \
+ jni/../../../FCmain/platform/android/../FCLog.h \
  /Users/user/Documents/Developer/android/android-ndk-r8d/platforms/android-9/arch-arm/usr/include/android/log.h \
  /Users/user/Documents/Developer/android/android-ndk-r8d/platforms/android-9/arch-arm/usr/include/stdio.h \
  /Users/user/Documents/Developer/android/android-ndk-r8d/platforms/android-9/arch-arm/usr/include/sys/cdefs.h \
@@ -20,7 +20,7 @@
  /Users/user/Documents/Developer/android/android-ndk-r8d/platforms/android-9/arch-arm/usr/include/sys/sysmacros.h \
  /Users/user/Documents/Developer/android/android-ndk-r8d/platforms/android-9/arch-arm/usr/include/jni.h
 
-/Users/user/Documents/projectJ/FireClass/FireClass/project/proj.android/jni/../../../FCmain/platform/android/../FCLog.h:
+jni/../../../FCmain/platform/android/../FCLog.h:
 
 /Users/user/Documents/Developer/android/android-ndk-r8d/platforms/android-9/arch-arm/usr/include/android/log.h:
 

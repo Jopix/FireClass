@@ -1,5 +1,4 @@
-package com.example.fileclass;
-
+ï»¿package com.example.fileclass;
 
 
 import android.os.Bundle;
@@ -16,19 +15,20 @@ public class Appstart extends Activity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);	
 		setContentView(R.layout.appstart);
-		//requestWindowFeature(Window.FEATURE_NO_TITLE);//È¥µô±êÌâÀ¸
+		//requestWindowFeature(Window.FEATURE_NO_TITLE);//å»æ‰æ ‡é¢˜æ 
 		//getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
-        //        WindowManager.LayoutParams.FLAG_FULLSCREEN);   //È«ÆÁÏÔÊ¾
-		//Toast.makeText(getApplicationContext(), "º¢×Ó£¡ºÃºÃ±³ËĞ£¡", Toast.LENGTH_LONG).show();
+        //        WindowManager.LayoutParams.FLAG_FULLSCREEN);   //å…¨å±æ˜¾ç¤º
+		//Toast.makeText(getApplicationContext(), "å­©å­ï¼å¥½å¥½èƒŒè¯µï¼", Toast.LENGTH_LONG).show();
 		//overridePendingTransition(R.anim.hyperspace_in, R.anim.hyperspace_out);
 		
 	new Handler().postDelayed(new Runnable(){
 		@Override
 		public void run(){
+			//1000småè¿è¡Œwelcome.class
 			Intent intent = new Intent (Appstart.this,Welcome.class);			
 			startActivity(intent);			
 			Appstart.this.finish();
 		}
-	}, 1000);
+	},3000);
    }
 }

@@ -1,5 +1,4 @@
-package com.example.fileclass;
-
+ï»¿package com.example.fileclass;
 
 
 import android.os.Bundle;
@@ -24,7 +23,7 @@ public class LoadingActivity extends Activity{
 			Intent intent = new Intent (LoadingActivity.this,Whatsnew.class);			
 			startActivity(intent);			
 			LoadingActivity.this.finish();
-			Toast.makeText(getApplicationContext(), "µÇÂ¼³É¹¦", Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), "ç™»å½•æˆåŠŸ", Toast.LENGTH_SHORT).show();
 		}
 	}, 200);
    }

@@ -1,42 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
- <LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/linearLayout1"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"        
-        android:gravity="center"
-        android:orientation="vertical"
-        android:background="#eee" >
-
-        
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:id="@+id/linearLayout1"
+     android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:background="#eee"
+     android:gravity="center"
+     android:orientation="vertical" >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center" >
-            
-            <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:src="@drawable/copyright" />
+
+<!--             <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/copyright" /> -->
             
             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
-            android:text="微信"
+            android:text="FileClass"
             android:textColor="#000000"
             android:textSize="35sp" />
             
         </LinearLayout>
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:gravity="center"
-            android:text="By：谜@BUAA"
-            android:textColor="#000"
-            android:textSize="30dp" />
 
         <Button
             android:id="@+id/main_login_btn"
@@ -55,10 +44,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="6dp"
-            android:text="使用QQ号或者微信号登录"
-            android:textSize="14sp"
-            android:textColor="#444" />
+            android:padding="10dp"
+            android:text="使用学号登录"
+            android:textColor="#444"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/main_regist_btn"
@@ -66,20 +55,24 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/btn_style_white"
+            android:clickable="false"
+            android:enabled="false"
             android:gravity="center"
+            android:onClick="welcome_register"
             android:paddingLeft="130dp"
             android:paddingRight="130dp"
             android:text="注册"
             android:textColor="#000000"
-            android:textSize="18sp"
-            android:onClick="welcome_register"  />
+            android:textSize="18sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="6dp"
             android:gravity="center"
-            android:text="【点击跳转到主界面】\n如果你没有QQ号，请注册"
-            android:textSize="14sp"
-            android:textColor="#444"  />
+            android:paddingBottom="100dp"
+            android:paddingTop="10dp"
+            android:text="【当前版本不支持注册】\n请联系教师添加登录帐号"
+            android:textColor="#444"
+            android:textSize="14sp" />
+
     </LinearLayout>
